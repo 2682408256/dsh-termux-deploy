@@ -1,0 +1,12 @@
+# 日志与运行产物
+.dsh-logs/
+*.log
+*.tgz
+
+# 密钥与凭据（绝不提交）
+id_ed25519*
+*.pub
+.credentials.yaml
+
+# 系统
+.DS_Store
