@@ -22,6 +22,9 @@
 | `ssh-termux.sh` | DSH 容器侧一键连接 Termux |
 | `MEMO.md` | 全部踩坑经验 + 快速操作手册 |
 | `deploy-dsh-termux.sh` | 旧版分步部署脚本（保留） |
+| `dsh-start.sh` | **Termux 一键拉起**（sshd + dsh 守护 + wake-lock，Termux 被杀后重开跑它） |
+| `dsh-keepalive.sh` | dsh 保活守护（dsh 死了自动重启） |
+| `ui-preview.html` | 手机 UI 暗色科技风预览（纯前端） |
 
 ## 🚀 快速开始
 
