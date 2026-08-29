@@ -1,0 +1,30 @@
+{
+  "unit": {
+    "name": "workspace",
+    "version": 2
+  },
+  "global": {
+    "initialized": true,
+    "workspaceIds": [
+      "6caa3fc6-d12d-4a0e-b83d-0279e8342a15"
+    ],
+    "archivedSessionIds": []
+  },
+  "tables": {
+    "workspaces": {
+      "6caa3fc6-d12d-4a0e-b83d-0279e8342a15": {
+        "path": "/home/dsh/workspace",
+        "title": "workspace",
+        "sessionIds": [
+          "session-61f37789-a226-4c7c-aca5-3b7fb03061af",
+          "session-ec048d5d-11c1-49ed-b288-c1be8ea30d2b",
+          "session-a7a2ee5b-2078-4e2a-8644-6ebfe68946e2",
+          "session-f7cc877f-f54c-45a0-9626-2a55ce3f9081",
+          "session-84ba71cf-f301-42d6-8f9f-3f516b11b03a"
+        ],
+        "createdAt": "2026-08-25T02:28:11.888Z",
+        "updatedAt": "2026-08-28T17:47:19.643Z"
+      }
+    }
+  }
+}

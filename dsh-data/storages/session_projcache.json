@@ -1,0 +1,1177 @@
+{
+  "unit": {
+    "name": "session_projcache",
+    "version": 3
+  },
+  "global": null,
+  "tables": {
+    "sessions": {
+      "session-84ba71cf-f301-42d6-8f9f-3f516b11b03a": {
+        "identity": {
+          "createdAt": 1787624891928,
+          "cwd": "/home/dsh/workspace"
+        },
+        "rows": {
+          "sessionStats": {
+            "ver": 1,
+            "seq": 283178,
+            "val": {
+              "turns": 84,
+              "steps": 441,
+              "llmMs": 3712002,
+              "toolMs": 1939102,
+              "ttftMs": 1156397,
+              "ttftSteps": 440,
+              "decodeMs": 2540545,
+              "decodeTokens": 292091,
+              "lastTurn": 84,
+              "openStep": null,
+              "pendingCalls": {}
+            }
+          },
+          "title": {
+            "ver": 1,
+            "seq": 283178,
+            "val": "容器，termux本地环境调试"
+          },
+          "goal": {
+            "ver": 4,
+            "seq": 283178,
+            "val": null
+          },
+          "tokenUsage": {
+            "ver": 1,
+            "seq": 283178,
+            "val": {
+              "totals": {
+                "uncachedInputTokens": 999096,
+                "outputTokens": 292091,
+                "cacheReadTokens": 90977664,
+                "cacheWriteTokens": 0
+              },
+              "last": {
+                "turn": 84,
+                "step": 2,
+                "buckets": {
+                  "uncachedInputTokens": 144,
+                  "outputTokens": 272,
+                  "cacheReadTokens": 406144,
+                  "cacheWriteTokens": 0
+                }
+              }
+            }
+          },
+          "contextPressure": {
+            "ver": 4,
+            "seq": 283178,
+            "val": {
+              "surfaceTokens": 245773,
+              "contextWindow": 1000000,
+              "pressureTokens": 406288,
+              "sampledSurfaceTokens": 245643
+            }
+          },
+          "contextBreakdown": {
+            "ver": 2,
+            "seq": 283178,
+            "val": {
+              "systemTokens": 1578,
+              "toolsTokens": 6475,
+              "messageTokens": 245773
+            }
+          },
+          "subagentTiming": {
+            "ver": 2,
+            "seq": 283178,
+            "val": {
+              "descriptorSeen": false,
+              "settledMs": 0
+            }
+          },
+          "subagent": {
+            "ver": 2,
+            "seq": 283178,
+            "val": {}
+          },
+          "permissions": {
+            "ver": 1,
+            "seq": 283178,
+            "val": {
+              "preset": "danger-full-access",
+              "sandbox": "danger-full-access",
+              "approval": "never"
+            }
+          },
+          "sessionListMetadata": {
+            "ver": 1,
+            "seq": 283178,
+            "val": {
+              "blank": false,
+              "lastPromptAt": 1787816589232
+            }
+          },
+          "imageLimits": {
+            "ver": 1,
+            "seq": 283178,
+            "val": null
+          },
+          "todos": {
+            "ver": 2,
+            "seq": 283178,
+            "val": null
+          },
+          "plan": {
+            "ver": 2,
+            "seq": 283178,
+            "val": {
+              "active": false,
+              "wanted": null,
+              "running": null
+            }
+          }
+        }
+      },
+      "c873c329-d16d-4a02-b0f9-0947e41efd01": {
+        "identity": {
+          "createdAt": 1787625883426,
+          "cwd": "/home/dsh/workspace"
+        },
+        "rows": {
+          "sessionStats": {
+            "ver": 1,
+            "seq": 25032,
+            "val": {
+              "turns": 1,
+              "steps": 38,
+              "llmMs": 207396,
+              "toolMs": 420208,
+              "ttftMs": 40938,
+              "ttftSteps": 38,
+              "decodeMs": 166458,
+              "decodeTokens": 26326,
+              "lastTurn": 1,
+              "openStep": null,
+              "pendingCalls": {}
+            }
+          },
+          "title": {
+            "ver": 1,
+            "seq": 25032,
+            "val": "请调研以下 GitHub 仓库/网页，"
+          },
+          "goal": {
+            "ver": 4,
+            "seq": 25032,
+            "val": null
+          },
+          "tokenUsage": {
+            "ver": 1,
+            "seq": 25032,
+            "val": {
+              "totals": {
+                "uncachedInputTokens": 60805,
+                "outputTokens": 26326,
+                "cacheReadTokens": 1558016,
+                "cacheWriteTokens": 0
+              },
+              "last": {
+                "turn": 1,
+                "step": 38,
+                "buckets": {
+                  "uncachedInputTokens": 99,
+                  "outputTokens": 4043,
+                  "cacheReadTokens": 78848,
+                  "cacheWriteTokens": 0
+                }
+              }
+            }
+          },
+          "contextPressure": {
+            "ver": 4,
+            "seq": 25032,
+            "val": {
+              "surfaceTokens": 56143,
+              "contextWindow": 1000000,
+              "pressureTokens": 78947,
+              "sampledSurfaceTokens": 53629
+            }
+          },
+          "contextBreakdown": {
+            "ver": 2,
+            "seq": 25032,
+            "val": {
+              "systemTokens": 1683,
+              "toolsTokens": 6665,
+              "messageTokens": 56143
+            }
+          },
+          "subagentTiming": {
+            "ver": 2,
+            "seq": 25032,
+            "val": {
+              "descriptorSeen": true,
+              "settledMs": 577940
+            }
+          },
+          "subagent": {
+            "ver": 2,
+            "seq": 25032,
+            "val": {
+              "identity": {
+                "mode": "continuable",
+                "label": "调研 Termux 跑 DSH 的项目",
+                "seq": 0
+              }
+            }
+          },
+          "permissions": {
+            "ver": 1,
+            "seq": 25032,
+            "val": {
+              "preset": "danger-full-access",
+              "sandbox": "danger-full-access",
+              "approval": "never"
+            }
+          },
+          "sessionListMetadata": {
+            "ver": 1,
+            "seq": 25032,
+            "val": {
+              "blank": false,
+              "lastPromptAt": 1787625883496
+            }
+          },
+          "imageLimits": {
+            "ver": 1,
+            "seq": 25032,
+            "val": null
+          },
+          "todos": {
+            "ver": 2,
+            "seq": 25032,
+            "val": null
+          },
+          "plan": {
+            "ver": 2,
+            "seq": 25032,
+            "val": {
+              "active": false,
+              "wanted": null,
+              "running": null
+            }
+          }
+        }
+      },
+      "773b28b2-dc51-4734-97c5-acab3daff766": {
+        "identity": {
+          "createdAt": 1787628311740,
+          "cwd": "/home/dsh/workspace"
+        },
+        "rows": {
+          "sessionStats": {
+            "ver": 1,
+            "seq": 11688,
+            "val": {
+              "turns": 1,
+              "steps": 16,
+              "llmMs": 83114,
+              "toolMs": 231812,
+              "ttftMs": 13871,
+              "ttftSteps": 16,
+              "decodeMs": 69243,
+              "decodeTokens": 12318,
+              "lastTurn": 1,
+              "openStep": null,
+              "pendingCalls": {}
+            }
+          },
+          "title": {
+            "ver": 1,
+            "seq": 11688,
+            "val": "请获取 GitHub 仓库 https://github.c"
+          },
+          "goal": {
+            "ver": 4,
+            "seq": 11688,
+            "val": null
+          },
+          "tokenUsage": {
+            "ver": 1,
+            "seq": 11688,
+            "val": {
+              "totals": {
+                "uncachedInputTokens": 18103,
+                "outputTokens": 12318,
+                "cacheReadTokens": 268800,
+                "cacheWriteTokens": 0
+              },
+              "last": {
+                "turn": 1,
+                "step": 16,
+                "buckets": {
+                  "uncachedInputTokens": 292,
+                  "outputTokens": 3071,
+                  "cacheReadTokens": 28288,
+                  "cacheWriteTokens": 0
+                }
+              }
+            }
+          },
+          "contextPressure": {
+            "ver": 4,
+            "seq": 11688,
+            "val": {
+              "surfaceTokens": 19072,
+              "contextWindow": 1000000,
+              "pressureTokens": 28580,
+              "sampledSurfaceTokens": 17116
+            }
+          },
+          "contextBreakdown": {
+            "ver": 2,
+            "seq": 11688,
+            "val": {
+              "systemTokens": 1683,
+              "toolsTokens": 6665,
+              "messageTokens": 19072
+            }
+          },
+          "subagentTiming": {
+            "ver": 2,
+            "seq": 11688,
+            "val": {
+              "descriptorSeen": true,
+              "settledMs": 308524
+            }
+          },
+          "subagent": {
+            "ver": 2,
+            "seq": 11688,
+            "val": {
+              "identity": {
+                "mode": "continuable",
+                "label": "抓取 dsh-termux 安装细节",
+                "seq": 0
+              }
+            }
+          },
+          "permissions": {
+            "ver": 1,
+            "seq": 11688,
+            "val": {
+              "preset": "danger-full-access",
+              "sandbox": "danger-full-access",
+              "approval": "never"
+            }
+          },
+          "sessionListMetadata": {
+            "ver": 1,
+            "seq": 11688,
+            "val": {
+              "blank": false,
+              "lastPromptAt": 1787628311822
+            }
+          },
+          "imageLimits": {
+            "ver": 1,
+            "seq": 11688,
+            "val": null
+          },
+          "todos": {
+            "ver": 2,
+            "seq": 11688,
+            "val": null
+          },
+          "plan": {
+            "ver": 2,
+            "seq": 11688,
+            "val": {
+              "active": false,
+              "wanted": null,
+              "running": null
+            }
+          }
+        }
+      },
+      "session-f7cc877f-f54c-45a0-9626-2a55ce3f9081": {
+        "identity": {
+          "createdAt": 1787630440242,
+          "cwd": "/home/dsh/workspace"
+        },
+        "rows": {
+          "sessionStats": {
+            "ver": 1,
+            "seq": 53190,
+            "val": {
+              "turns": 8,
+              "steps": 101,
+              "llmMs": 653872,
+              "toolMs": 1706513,
+              "ttftMs": 255513,
+              "ttftSteps": 100,
+              "decodeMs": 396441,
+              "decodeTokens": 55987,
+              "lastTurn": 8,
+              "openStep": null,
+              "pendingCalls": {}
+            }
+          },
+          "title": {
+            "ver": 1,
+            "seq": 53190,
+            "val": "你好"
+          },
+          "goal": {
+            "ver": 4,
+            "seq": 53190,
+            "val": null
+          },
+          "tokenUsage": {
+            "ver": 1,
+            "seq": 53190,
+            "val": {
+              "totals": {
+                "uncachedInputTokens": 64826,
+                "outputTokens": 55987,
+                "cacheReadTokens": 6433280,
+                "cacheWriteTokens": 0
+              },
+              "last": {
+                "turn": 8,
+                "step": 6,
+                "buckets": {
+                  "uncachedInputTokens": 2366,
+                  "outputTokens": 1933,
+                  "cacheReadTokens": 115456,
+                  "cacheWriteTokens": 0
+                }
+              }
+            }
+          },
+          "contextPressure": {
+            "ver": 4,
+            "seq": 53190,
+            "val": {
+              "surfaceTokens": 77482,
+              "contextWindow": 1000000,
+              "pressureTokens": 117822,
+              "sampledSurfaceTokens": 76330
+            }
+          },
+          "contextBreakdown": {
+            "ver": 2,
+            "seq": 53190,
+            "val": {
+              "systemTokens": 1578,
+              "toolsTokens": 6475,
+              "messageTokens": 77482
+            }
+          },
+          "subagentTiming": {
+            "ver": 2,
+            "seq": 53190,
+            "val": {
+              "descriptorSeen": false,
+              "settledMs": 0
+            }
+          },
+          "subagent": {
+            "ver": 2,
+            "seq": 53190,
+            "val": {}
+          },
+          "permissions": {
+            "ver": 1,
+            "seq": 53190,
+            "val": {
+              "preset": "danger-full-access",
+              "sandbox": "danger-full-access",
+              "approval": "never"
+            }
+          },
+          "sessionListMetadata": {
+            "ver": 1,
+            "seq": 53190,
+            "val": {
+              "blank": false,
+              "lastPromptAt": 1787806253419
+            }
+          },
+          "imageLimits": {
+            "ver": 1,
+            "seq": 53190,
+            "val": null
+          },
+          "todos": {
+            "ver": 2,
+            "seq": 53190,
+            "val": null
+          },
+          "plan": {
+            "ver": 2,
+            "seq": 53190,
+            "val": {
+              "active": false,
+              "wanted": null,
+              "running": null
+            }
+          }
+        }
+      },
+      "session-a7a2ee5b-2078-4e2a-8644-6ebfe68946e2": {
+        "identity": {
+          "createdAt": 1787654261794,
+          "cwd": "/home/dsh/workspace"
+        },
+        "rows": {
+          "sessionStats": {
+            "ver": 1,
+            "seq": 50101,
+            "val": {
+              "turns": 6,
+              "steps": 124,
+              "llmMs": 3164024,
+              "toolMs": 869560,
+              "ttftMs": 2241483,
+              "ttftSteps": 123,
+              "decodeMs": 914889,
+              "decodeTokens": 83127,
+              "lastTurn": 6,
+              "openStep": null,
+              "pendingCalls": {}
+            }
+          },
+          "title": {
+            "ver": 1,
+            "seq": 50101,
+            "val": "我是一个上班族，程序员，我"
+          },
+          "goal": {
+            "ver": 4,
+            "seq": 50101,
+            "val": null
+          },
+          "tokenUsage": {
+            "ver": 1,
+            "seq": 50101,
+            "val": {
+              "totals": {
+                "uncachedInputTokens": 339883,
+                "outputTokens": 83127,
+                "cacheReadTokens": 7988992,
+                "cacheWriteTokens": 0
+              },
+              "last": {
+                "turn": 6,
+                "step": 2,
+                "buckets": {
+                  "uncachedInputTokens": 39,
+                  "outputTokens": 1103,
+                  "cacheReadTokens": 107136,
+                  "cacheWriteTokens": 0
+                }
+              }
+            }
+          },
+          "contextPressure": {
+            "ver": 4,
+            "seq": 50101,
+            "val": {
+              "surfaceTokens": 81519,
+              "contextWindow": 1000000,
+              "pressureTokens": 107175,
+              "sampledSurfaceTokens": 80869
+            }
+          },
+          "contextBreakdown": {
+            "ver": 2,
+            "seq": 50101,
+            "val": {
+              "systemTokens": 1578,
+              "toolsTokens": 6475,
+              "messageTokens": 81519
+            }
+          },
+          "subagentTiming": {
+            "ver": 2,
+            "seq": 50101,
+            "val": {
+              "descriptorSeen": false,
+              "settledMs": 0
+            }
+          },
+          "subagent": {
+            "ver": 2,
+            "seq": 50101,
+            "val": {}
+          },
+          "permissions": {
+            "ver": 1,
+            "seq": 50101,
+            "val": {
+              "preset": "danger-full-access",
+              "sandbox": "danger-full-access",
+              "approval": "never"
+            }
+          },
+          "sessionListMetadata": {
+            "ver": 1,
+            "seq": 50101,
+            "val": {
+              "blank": false,
+              "lastPromptAt": 1787812251901
+            }
+          },
+          "imageLimits": {
+            "ver": 1,
+            "seq": 50101,
+            "val": null
+          },
+          "todos": {
+            "ver": 2,
+            "seq": 50101,
+            "val": null
+          },
+          "plan": {
+            "ver": 2,
+            "seq": 50101,
+            "val": {
+              "active": false,
+              "wanted": null,
+              "running": null
+            }
+          }
+        }
+      },
+      "15a73369-e86a-4c37-98e4-fdcf981b5b8f": {
+        "identity": {
+          "createdAt": 1787655639288,
+          "cwd": "/home/dsh/workspace"
+        },
+        "rows": {
+          "sessionStats": {
+            "ver": 1,
+            "seq": 26688,
+            "val": {
+              "turns": 1,
+              "steps": 17,
+              "llmMs": 231367,
+              "toolMs": 54556,
+              "ttftMs": 16321,
+              "ttftSteps": 17,
+              "decodeMs": 215046,
+              "decodeTokens": 27161,
+              "lastTurn": 1,
+              "openStep": null,
+              "pendingCalls": {}
+            }
+          },
+          "title": {
+            "ver": 1,
+            "seq": 26688,
+            "val": "请查看两张手机截图（DSH Web GU"
+          },
+          "goal": {
+            "ver": 4,
+            "seq": 26688,
+            "val": null
+          },
+          "tokenUsage": {
+            "ver": 1,
+            "seq": 26688,
+            "val": {
+              "totals": {
+                "uncachedInputTokens": 9614,
+                "outputTokens": 27161,
+                "cacheReadTokens": 337408,
+                "cacheWriteTokens": 0
+              },
+              "last": {
+                "turn": 1,
+                "step": 17,
+                "buckets": {
+                  "uncachedInputTokens": 431,
+                  "outputTokens": 4228,
+                  "cacheReadTokens": 38528,
+                  "cacheWriteTokens": 0
+                }
+              }
+            }
+          },
+          "contextPressure": {
+            "ver": 4,
+            "seq": 26688,
+            "val": {
+              "surfaceTokens": 25303,
+              "contextWindow": 1000000,
+              "pressureTokens": 38959,
+              "sampledSurfaceTokens": 22576
+            }
+          },
+          "contextBreakdown": {
+            "ver": 2,
+            "seq": 26688,
+            "val": {
+              "systemTokens": 1578,
+              "toolsTokens": 6475,
+              "messageTokens": 25303
+            }
+          },
+          "subagentTiming": {
+            "ver": 2,
+            "seq": 26688,
+            "val": {
+              "descriptorSeen": true,
+              "settledMs": 286333
+            }
+          },
+          "subagent": {
+            "ver": 2,
+            "seq": 26688,
+            "val": {
+              "identity": {
+                "mode": "one-shot",
+                "label": "查看手机截图分析UI问题",
+                "seq": 6
+              }
+            }
+          },
+          "permissions": {
+            "ver": 1,
+            "seq": 26688,
+            "val": {
+              "preset": "danger-full-access",
+              "sandbox": "danger-full-access",
+              "approval": "never"
+            }
+          },
+          "sessionListMetadata": {
+            "ver": 1,
+            "seq": 26688,
+            "val": {
+              "blank": false,
+              "lastPromptAt": 1787655639338
+            }
+          },
+          "imageLimits": {
+            "ver": 1,
+            "seq": 26688,
+            "val": null
+          },
+          "todos": {
+            "ver": 2,
+            "seq": 26688,
+            "val": null
+          },
+          "plan": {
+            "ver": 2,
+            "seq": 26688,
+            "val": {
+              "active": false,
+              "wanted": null,
+              "running": null
+            }
+          }
+        }
+      },
+      "603f4c01-92f8-45c7-9d91-7be1ecbf5754": {
+        "identity": {
+          "createdAt": 1787656595701,
+          "cwd": "/home/dsh/workspace"
+        },
+        "rows": {
+          "sessionStats": {
+            "ver": 1,
+            "seq": 42237,
+            "val": {
+              "turns": 1,
+              "steps": 55,
+              "llmMs": 373783,
+              "toolMs": 10603,
+              "ttftMs": 57270,
+              "ttftSteps": 55,
+              "decodeMs": 316513,
+              "decodeTokens": 43903,
+              "lastTurn": 1,
+              "openStep": null,
+              "pendingCalls": {}
+            }
+          },
+          "title": {
+            "ver": 1,
+            "seq": 42237,
+            "val": "我需要你分析 DeepSeek Harness 前"
+          },
+          "goal": {
+            "ver": 4,
+            "seq": 42237,
+            "val": null
+          },
+          "tokenUsage": {
+            "ver": 1,
+            "seq": 42237,
+            "val": {
+              "totals": {
+                "uncachedInputTokens": 60449,
+                "outputTokens": 43903,
+                "cacheReadTokens": 2478720,
+                "cacheWriteTokens": 0
+              },
+              "last": {
+                "turn": 1,
+                "step": 55,
+                "buckets": {
+                  "uncachedInputTokens": 7301,
+                  "outputTokens": 2919,
+                  "cacheReadTokens": 91008,
+                  "cacheWriteTokens": 0
+                }
+              }
+            }
+          },
+          "contextPressure": {
+            "ver": 4,
+            "seq": 42237,
+            "val": {
+              "surfaceTokens": 71077,
+              "contextWindow": 1000000,
+              "pressureTokens": 98309,
+              "sampledSurfaceTokens": 69233
+            }
+          },
+          "contextBreakdown": {
+            "ver": 2,
+            "seq": 42237,
+            "val": {
+              "systemTokens": 1683,
+              "toolsTokens": 6665,
+              "messageTokens": 71077
+            }
+          },
+          "subagentTiming": {
+            "ver": 2,
+            "seq": 42237,
+            "val": {
+              "descriptorSeen": true,
+              "settledMs": 386277
+            }
+          },
+          "subagent": {
+            "ver": 2,
+            "seq": 42237,
+            "val": {
+              "identity": {
+                "mode": "continuable",
+                "label": "深挖dsh前端布局结构",
+                "seq": 0
+              }
+            }
+          },
+          "permissions": {
+            "ver": 1,
+            "seq": 42237,
+            "val": {
+              "preset": "danger-full-access",
+              "sandbox": "danger-full-access",
+              "approval": "never"
+            }
+          },
+          "sessionListMetadata": {
+            "ver": 1,
+            "seq": 42237,
+            "val": {
+              "blank": false,
+              "lastPromptAt": 1787656595897
+            }
+          },
+          "imageLimits": {
+            "ver": 1,
+            "seq": 42237,
+            "val": null
+          },
+          "todos": {
+            "ver": 2,
+            "seq": 42237,
+            "val": null
+          },
+          "plan": {
+            "ver": 2,
+            "seq": 42237,
+            "val": {
+              "active": false,
+              "wanted": null,
+              "running": null
+            }
+          }
+        }
+      },
+      "session-ec048d5d-11c1-49ed-b288-c1be8ea30d2b": {
+        "identity": {
+          "createdAt": 1787816548587,
+          "cwd": "/home/dsh/workspace"
+        },
+        "rows": {
+          "sessionStats": {
+            "ver": 1,
+            "seq": 237296,
+            "val": {
+              "turns": 29,
+              "steps": 295,
+              "llmMs": 9949992,
+              "toolMs": 5400605,
+              "ttftMs": 6571581,
+              "ttftSteps": 289,
+              "decodeMs": 3378411,
+              "decodeTokens": 274082,
+              "lastTurn": 29,
+              "openStep": {
+                "turn": 29,
+                "step": 11,
+                "startTime": 1787985068948,
+                "firstTokenTime": 1787985093669
+              },
+              "pendingCalls": {}
+            }
+          },
+          "title": {
+            "ver": 1,
+            "seq": 237296,
+            "val": "我现在把dsh跑在手机proot容器"
+          },
+          "goal": {
+            "ver": 4,
+            "seq": 237296,
+            "val": {
+              "goal": {
+                "id": "goal-3500cf00-22da-49c5-9ab3-dc65aa272780",
+                "revision": 2,
+                "objective": "把 NousResearch/hermes-agent (Hermes Agent) 部署到手机 proot Ubuntu 容器内跑起来，并用已验证的 Gradle 工具链打包一个可安装到手机桌面的 Android APK 聊天客户端，最终交付 APK 文件。",
+                "phase": "complete",
+                "maxGoalRounds": 6
+              },
+              "roundsStarted": 0,
+              "createdAt": 1787893391692,
+              "updatedAt": 1787899384123
+            }
+          },
+          "tokenUsage": {
+            "ver": 1,
+            "seq": 237296,
+            "val": {
+              "totals": {
+                "uncachedInputTokens": 380136,
+                "outputTokens": 274082,
+                "cacheReadTokens": 35825152,
+                "cacheWriteTokens": 0
+              },
+              "last": {
+                "turn": 29,
+                "step": 10,
+                "buckets": {
+                  "uncachedInputTokens": 1263,
+                  "outputTokens": 380,
+                  "cacheReadTokens": 204416,
+                  "cacheWriteTokens": 0
+                }
+              }
+            }
+          },
+          "contextPressure": {
+            "ver": 4,
+            "seq": 237296,
+            "val": {
+              "surfaceTokens": 161067,
+              "contextWindow": 262144,
+              "pressureTokens": 205679,
+              "sampledSurfaceTokens": 160546
+            }
+          },
+          "contextBreakdown": {
+            "ver": 2,
+            "seq": 237296,
+            "val": {
+              "systemTokens": 1580,
+              "toolsTokens": 6475,
+              "messageTokens": 161067
+            }
+          },
+          "subagentTiming": {
+            "ver": 2,
+            "seq": 237296,
+            "val": {
+              "descriptorSeen": false,
+              "settledMs": 0,
+              "pendingTurnStart": 1787984455997
+            }
+          },
+          "subagent": {
+            "ver": 2,
+            "seq": 237296,
+            "val": {}
+          },
+          "permissions": {
+            "ver": 1,
+            "seq": 237296,
+            "val": {
+              "preset": "danger-full-access",
+              "sandbox": "danger-full-access",
+              "approval": "never"
+            }
+          },
+          "sessionListMetadata": {
+            "ver": 1,
+            "seq": 237296,
+            "val": {
+              "blank": false,
+              "lastPromptAt": 1787984456644
+            }
+          },
+          "imageLimits": {
+            "ver": 1,
+            "seq": 237296,
+            "val": null
+          },
+          "todos": {
+            "ver": 2,
+            "seq": 237296,
+            "val": null
+          },
+          "plan": {
+            "ver": 2,
+            "seq": 237296,
+            "val": {
+              "active": false,
+              "wanted": null,
+              "running": null
+            }
+          }
+        }
+      },
+      "session-61f37789-a226-4c7c-aca5-3b7fb03061af": {
+        "identity": {
+          "createdAt": 1787939239628,
+          "cwd": "/home/dsh/workspace"
+        },
+        "rows": {
+          "sessionStats": {
+            "ver": 1,
+            "seq": 9297,
+            "val": {
+              "turns": 2,
+              "steps": 12,
+              "llmMs": 285934,
+              "toolMs": 80965,
+              "ttftMs": 198951,
+              "ttftSteps": 12,
+              "decodeMs": 86983,
+              "decodeTokens": 9581,
+              "lastTurn": 2,
+              "openStep": null,
+              "pendingCalls": {}
+            }
+          },
+          "title": {
+            "ver": 1,
+            "seq": 9297,
+            "val": "github上有没有类似小智Linux的"
+          },
+          "goal": {
+            "ver": 4,
+            "seq": 9297,
+            "val": null
+          },
+          "tokenUsage": {
+            "ver": 1,
+            "seq": 9297,
+            "val": {
+              "totals": {
+                "uncachedInputTokens": 14243,
+                "outputTokens": 9581,
+                "cacheReadTokens": 193536,
+                "cacheWriteTokens": 0
+              },
+              "last": {
+                "turn": 2,
+                "step": 7,
+                "buckets": {
+                  "uncachedInputTokens": 3218,
+                  "outputTokens": 2549,
+                  "cacheReadTokens": 25088,
+                  "cacheWriteTokens": 0
+                }
+              }
+            }
+          },
+          "contextPressure": {
+            "ver": 4,
+            "seq": 9297,
+            "val": {
+              "surfaceTokens": 16973,
+              "contextWindow": 262144,
+              "pressureTokens": 28306,
+              "sampledSurfaceTokens": 15555
+            }
+          },
+          "contextBreakdown": {
+            "ver": 2,
+            "seq": 9297,
+            "val": {
+              "systemTokens": 1580,
+              "toolsTokens": 6475,
+              "messageTokens": 16973
+            }
+          },
+          "subagentTiming": {
+            "ver": 2,
+            "seq": 9297,
+            "val": {
+              "descriptorSeen": false,
+              "settledMs": 0
+            }
+          },
+          "subagent": {
+            "ver": 2,
+            "seq": 9297,
+            "val": {}
+          },
+          "permissions": {
+            "ver": 1,
+            "seq": 9297,
+            "val": {
+              "preset": "danger-full-access",
+              "sandbox": "danger-full-access",
+              "approval": "never"
+            }
+          },
+          "sessionListMetadata": {
+            "ver": 1,
+            "seq": 9297,
+            "val": {
+              "blank": false,
+              "lastPromptAt": 1787939695245
+            }
+          },
+          "imageLimits": {
+            "ver": 1,
+            "seq": 9297,
+            "val": null
+          },
+          "todos": {
+            "ver": 2,
+            "seq": 9297,
+            "val": null
+          },
+          "plan": {
+            "ver": 2,
+            "seq": 9297,
+            "val": {
+              "active": false,
+              "wanted": null,
+              "running": null
+            }
+          }
+        }
+      }
+    }
+  }
+}

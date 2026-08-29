@@ -10,3 +10,10 @@ id_ed25519*
 
 # 系统
 .DS_Store
+
+# ── dsh 数据防护: 凭据与机器本地状态绝不入库 ──
+.credentials.yaml
+*.db
+*.db-shm
+*.db-wal
+*.zstd.tmp*

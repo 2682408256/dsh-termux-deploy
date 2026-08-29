@@ -83,3 +83,45 @@ MIT License，见 [LICENSE](LICENSE)。
 
 - [sunflower2333/dsh-termux](https://github.com/sunflower2333/dsh-termux) — Termux 离线打包与原生模块预编译
 - [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) — DeepSeek Harness
+
+---
+
+## 📤 DSH 数据同步（手机容器 → GitHub → Windows）
+
+`dsh-data/` 目录存放可从容器导出的 dsh 用户数据，跨设备同步用。
+
+### 包含（安全、可移植）
+
+| 路径 | 说明 |
+|---|---|
+| `dsh-data/settings.yaml` | 全局设置 + 模型供应商配置（只含环境变量引用，**无明文密钥**） |
+| `dsh-data/skills/` | 自定义技能（SKILL.md） |
+| `dsh-data/storages/` | 工作区/会话缓存 JSON |
+| `dsh-data/skin-center-active.json` | 皮肤设置 |
+| `dsh-data/sessions/` | 会话文件（**仅元数据**；dsh 设计如此，对话正文在机器本地 sqlite，不可移植） |
+
+### 明确不包含（机器本地/敏感）
+
+- `.credentials.yaml` — 明文 API key，**永不入库**。跨设备请手动拷贝：
+  `cp /home/dsh/.dsh/.credentials.yaml <目标机>/.dsh/`（Windows: `%USERPROFILE%\.dsh\`）
+- `profiles/`（9.7M node_modules 运行时）、`state.db*`（sqlite 会话索引）、`auth.lock` 等
+
+### 手机容器侧导出
+
+```bash
+# 密钥打码（如含历史密钥）: zstd 解压→替换→重压，见会话记录
+rsync -a /home/dsh/.dsh/{settings.yaml,skills,storages,skin-center-active.json,sessions} dsh-data/
+git add dsh-data/ && git commit -m "sync dsh data" && git push
+```
+
+### Windows 侧恢复
+
+```powershell
+# 1) 拉取仓库
+git clone git@github.com:2682408256/dsh-termux-deploy.git
+# 2) 合并进用户 dsh 目录 (注意: 若 Windows 已有 ~/.dsh 先备份)
+robocopy dsh-termux-deploy\dsh-data %USERPROFILE%\.dsh /E /NJH /NJS
+# 3) 手动补凭据: 把 .credentials.yaml 放进 %USERPROFILE%\.dsh\
+```
+
+> ⚠️ 本仓库为**公开仓库**：dsh-data 里只有打码/无敏感数据，但如需同步含个人内容的文件，请把仓库改为 **Private**（Settings → General → Danger Zone）。
